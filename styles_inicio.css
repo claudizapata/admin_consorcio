@@ -1,0 +1,45 @@
+
+/* Main */
+.contenedor_main{
+  background-image: url('./assets/city-streets_editada2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: .8;
+  height: 80vh;
+  margin: 0;  
+  font-weight: 700;
+  font-size: 1.8rem;
+  display: flex;
+  align-items:flex-end ;
+} 
+
+/* Estado normal de la sección */
+.nosotros {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+/* Cuando el usuario hace clic en el navbar y la sección se activa */
+.nosotros:target {
+  animation: conRetardo 1.2s forwards;
+}
+/* Animación que espera antes de mostrar el contenido */
+@keyframes conRetardo {
+  0% { opacity: 0; }       /* Empieza invisible */
+  50% { opacity: 0; }      /* Se mantiene invisible (este es el "retardo") */
+  100% { opacity: 1; }     /* Aparece suavemente al final */
+}
+
+.nosotros_texto{
+ /* display: flex;   */
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  text-align: center;
+  margin: 4rem;
+  color: black;
+  padding: 3rem;
+/*   position: absolute; */
+  font-size: 1.8rem;
+ 
+}

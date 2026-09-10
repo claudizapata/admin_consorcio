@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1. Base para computadoras (por defecto) */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+body {
+  font-size: 1rem; /* El texto normal mide 16px */
+}
+.contenedor_h1 {
+  font-size: 1rem; /* El título mide 40px (16 * 2.5) */
+  font-family: "Lato", sans-serif;
+}
+.h1_abajo{
+  font-size: 1rem;
+}
+.contenedor_main {
+  padding: .1rem; /* El espacio interno mide 32px (16 * 2) */
+}
+/* --------------------- */
+
+/* 
+.lato-light-titulo {
+  font-family: "Lato", sans-serif;
+/*   font-weight: 300; 
+*/
+
+.inter-cuerpo {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+ /*  font-style: normal; */
+}
+
+.contenedor_header{
+  display: flex;    /* Activa el diseño en línea (horizontal) */
+  justify-content: space-between;
+  align-items: flex-end; /* Centra la imagen y el texto verticalmente entre sí */
+ /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
+  background-color: #5c7e89;
+  /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
+  color: black;
+  font-weight:100;
+  font-style: italic;
+  padding: 2rem;
+}
+
+
+.header-logo {
+  max-height: 100px;      /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: auto;
+  border-radius: 60% 40% 50% 70%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+.contenedor_nav{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;  
+}
+.link_nav{
+  color: wheat;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+.link_nav:hover{
+  color: rgb(20, 214, 204);
+  text-decoration: solid;
+   color: #00FDFF;
+}
+
+
+
+
+
+
+
+
+/* 2. Media Query para Celulares */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* ¡Magia! Ahora 1rem pasa a valer 14px */
+  }
+}

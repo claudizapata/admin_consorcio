@@ -1,0 +1,14 @@
+Para hacer que las cajas aparezcan de forma suave a medida que haces scroll, usa la moderna Intersection Observer API. Esta herramienta detecta cuando un elemento entra en la pantalla de manera eficiente y ligera sin sobrecargar el navegador con el evento tradicional de scroll.Preparación con HTML y CSSCrea tus cajas en HTML y dales una clase común, por ejemplo, .caja.En tu archivo CSS, oculta las cajas inicialmente usando opacity: 0 y desplázalas un poco con transform: translateY(50px).Define una clase .visible que restablezca la opacidad a 1 y el transform a 0, agregando una transición suave (transition: all 0.6s ease-out).Implementación en JavaScriptSelecciona todas las cajas usando document.querySelectorAll('.caja').Instancia el observador con new IntersectionObserver().Itera sobre las entradas y añade la clase .visible cuando isIntersecting sea verdadero.Llama al método observe() para cada caja.javascriptconst observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // Deja de observar una vez visible
+    }
+  });
+}, {
+  threshold: 0.1 // Se activa cuando al menos el 10% de la caja es visible
+});
+
+document.querySelectorAll('.caja').forEach(caja => {
+  observer.observe(caja);
+});

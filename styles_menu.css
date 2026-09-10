@@ -1,0 +1,43 @@
+    /* Asegura que el menú principal esté en línea y sirva de referencia */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative; /* Permite posicionar el submenú respecto a este item */
+}
+
+/* Estilos base para el menú desplegable (oculto por defecto) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Se despliega justo debajo del botón */
+  left: 0;
+  background-color: #5c7e89; /* Cambia al color de tu diseño */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/* Estilos para los links de las sub-opciones */
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 15px;
+  color: wheat;
+  text-decoration: none;
+}
+
+/* Efecto hover para las sub-opciones */
+.dropdown-menu li a:hover {
+  background-color: #415961;
+}
+
+/* TRUCO: Muestra el menú cuando pasas el mouse por encima de la opción padre */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
