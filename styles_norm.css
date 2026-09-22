@@ -50,3 +50,24 @@
   }
 }
 
+.accordion{
+  background-color: #ebebed;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin: 2rem 2rem;
+  font-size: 1.2rem;
+  
+  --bs-accordion-active-bg: #b3b8b6e7; /* Fondo activo */
+  --bs-accordion-active-color: #0f5132; /* Texto activo */
+  --bs-accordion-btn-focus-box-shadow: none; /* Quitar sombra celeste */
+}
+.accordion-button{
+  background-color: rgb(247, 235, 212);
+  color: black;
+  font-size: 2rem;
+ }
+.accordion-body{
+  background-color: #e5e5e7;
+  color: #212529;
+}
+

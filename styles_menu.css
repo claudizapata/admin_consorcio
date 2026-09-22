@@ -41,3 +41,6 @@ nav ul {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.dropdown-menu li a:visited{
+  color:blue
+}

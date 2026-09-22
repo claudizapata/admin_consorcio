@@ -69,11 +69,47 @@ body {
   text-decoration: none;
   font-style: normal;
 }
+
+/* Color cuando la opción está activa */
+.link_nav.active {
+  color: #00FDFF; /* Naranja brillante (cambia este color a tu gusto) */
+  font-weight: bold;
+}
 .link_nav:hover{
   color: rgb(20, 214, 204);
   text-decoration: solid;
    color: #00FDFF;
 }
+
+/* Botón Volver Arriba */
+.btn-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #84dfca;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-flotante.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 
