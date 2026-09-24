@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: flex-end; /* Centra la imagen y el texto verticalmente entre sí */
  /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
-  background-color: #5c7e89;
+  background-color: #acb0b2;
   /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
   color: black;
   font-weight:100;
@@ -72,13 +72,13 @@ body {
 
 /* Color cuando la opción está activa */
 .link_nav.active {
-  color: #00FDFF; /* Naranja brillante (cambia este color a tu gusto) */
+  color: #efc41a; /* (cambia este color a tu gusto) */
   font-weight: bold;
 }
 .link_nav:hover{
   color: rgb(20, 214, 204);
   text-decoration: solid;
-   color: #00FDFF;
+   color: #efc41a;
 }
 
 /* Botón Volver Arriba */

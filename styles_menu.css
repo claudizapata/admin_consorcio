@@ -16,7 +16,7 @@ nav ul {
   position: absolute;
   top: 100%; /* Se despliega justo debajo del botón */
   left: 0;
-  background-color: #5c7e89; /* Cambia al color de tu diseño */
+  background-color: #39467ae7; /* Cambia al color de tu diseño */
   box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
   list-style: none;
   padding: 10px 0;
@@ -28,7 +28,7 @@ nav ul {
 .dropdown-menu li a {
   display: block;
   padding: 8px 15px;
-  color: wheat;
+  color: rgb(244, 231, 205);
   text-decoration: none;
 }
 
