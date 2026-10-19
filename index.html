@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="./styles_menu.css">
         <link rel="stylesheet" href="./styles_inicio.css">
-
+        <link rel="stylesheet" href="./styles_form.css">
+        <link rel="stylesheet" href="./styles_whatsapp.css">
         
     <title>CRZ Administración</title>
 </head>
@@ -48,7 +49,7 @@
                     </ul> -->
                 </li>                    
                 <li class="nav-item"><a class="link_nav" href="./normativa.html">Normativa</a></li>
-                <li class="nav-item"><a class="link_nav" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="link_nav" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -60,7 +61,7 @@
         </div>
         <section id="nosotros" class="nosotros contenedor_h1">
              <div  class="nosotros_texto">
-                <h2 style="padding: .7rem; color: rgb(243, 202, 127)">Nosotros</h2>
+                <h2 style="padding: .7rem; color:  rgb(243, 164, 33)">Nosotros</h2>
                 <p >Dedicación responsable a la gestión integral y transparente de consorcios, ofreciendo soluciones eficientes para garantizar la armonía y la valorización de tu patrimonio. Nacimos con el propósito de transformar la administración de edificios, combinando experiencia profesional, innovación tecnológica y un trato humano cercano al consorcista.</p>
              </div>
              <div>
@@ -68,19 +69,45 @@
              </div>
 
         </section>
-        <!-- <section id="presencia" class="presencia">            
-             <div >
-               
-             </div>         
-        </section>
-         -->
 
+        <section id="contacto" class="contacto contenedor_h1">            
+            <div class="contacto_texto">
+                    <h2 style="padding: .7rem; color: rgb(234, 164, 33)">Contacto</h2>
+                    <p>Estamos aquí para ayudarte. Si tienes alguna pregunta, inquietud o deseas obtener más información sobre nuestros servicios de administración de consorcios, no dudes en ponerte en contacto con nosotros. Nuestro equipo estará encantado de asistirte y brindarte la atención que mereces.</p>
+            </div>
+                
+            <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="1e7f4284-111e-4250-ad31-039adc8c6f6a">
+                   <div class="form_group">
+                        <label for="name">Nombre:</label>
+                        <input class="form_input" type="text" name="name" placeholder="Tu nombre completo" required> 
+                    </div>
+                    <div class="form_group">
+                        <label for="phone">Teléfono:</label>
+                        <input class="form_input" type="tel" name="phone" placeholder="Ej: 11 1234-5678" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="email">Email:</label>
+                        <input class="form_input" type="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="subject">Asunto:</label>
+                        <input class="form_input" type="text" name="subject" placeholder="Ej: Consulta sobre administración de consorcio" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="message">Mensaje:</label>
+                        <textarea class="form_textarea" name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                        <button class="form_button" type="submit">Submit</button>
+            </form>
+        </section>
        
 
     </main>
     <footer>
         <div class="footer">
-            <p>© 2026 Estudio CRZ. Todos los derechos reservados.</p>
+             
+            <p class="copyright">© 2026 Desarrollo web: Estudio CRZ. Todos los derechos reservados.</p>
         </div>
 
     </footer>
@@ -88,5 +115,18 @@
     <button id="btnVolverArriba" class="btn-flotante" title="Volver arriba">↑</button>
     <script src="./script_volver.js"></script>
     <script src="./script_nav.js"></script>
+
+  
+  <!-- Botón flotante de WhatsApp -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/5491159595205?text=Hola%2C%20quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <!-- Icono SVG de WhatsApp -->
+    <svg xmlns="http://w3.org" viewBox="0 0 32 32" fill="#FFF">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.85.745 5.524 2.053 7.857L0 32l8.361-2.007A15.932 15.932 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.318 22.846c-.347.973-1.728 1.83-2.846 2.067-.768.16-1.77.288-5.111-1.077-4.303-1.72-7.094-6.108-7.309-6.39-.215-.281-1.748-2.327-1.748-4.437 0-2.11 1.107-3.149 1.503-3.578.396-.43.865-.538 1.154-.538.288 0 .576.004.826.015.266.012.624-.101.975.736.36.865 1.226 2.997 1.334 3.213.108.215.18.465.036.756-.144.29-.216.469-.432.72-.216.252-.453.564-.648.756-.216.216-.44.45-.19.879.252.429 1.116 1.842 2.395 2.984 1.646 1.467 3.033 1.921 3.462 2.137.429.216.68.18.936-.108.256-.288 1.08-1.259 1.368-1.688.288-.429.576-.36.972-.216.396.144 2.518 1.188 2.95 1.404.432.216.72.324.828.504.108.18.108 1.044-.239 2.017z"/>
+    </svg>
+  </a>
+</div>
+
+
 </body>
 </html>

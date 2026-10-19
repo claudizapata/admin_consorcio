@@ -58,7 +58,7 @@
   font-size: 1.2rem;
   
   
-  --bs-accordion-active-bg: #39467ae7; /* Fondo activo */
+  --bs-accordion-active-bg: #5a5f75e7; /* Fondo activo */
   --bs-accordion-active-color: white; /* Texto activo */
   --bs-accordion-btn-focus-box-shadow: none; /* Quitar sombra celeste */
 }

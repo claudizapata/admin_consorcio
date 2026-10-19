@@ -16,7 +16,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 .h1_abajo{
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .contenedor_main {
   padding: .1rem; /* El espacio interno mide 32px (16 * 2) */
@@ -63,8 +63,8 @@ body {
   gap: 15px;  
 }
 .link_nav{
-  color: wheat;
-  font-size: 1.2rem;
+  color: white;
+  font-size: 1.6rem;
   font-weight: 400;
   text-decoration: none;
   font-style: normal;
@@ -86,7 +86,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #84dfca;
+  background-color: #5a5f75e7;
   color: white;
   border: none;
   border-radius: 50%;
