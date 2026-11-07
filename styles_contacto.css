@@ -1,0 +1,98 @@
+.contacto {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  margin: 1rem auto;
+  margin-top: 3rem;
+
+}
+/* Cuando el usuario hace clic en el navbar y la sección se activa */
+.contacto:target {
+  animation: conRetardo 1.2s forwards;
+}
+/* Animación que espera antes de mostrar el contenido */
+@keyframes conRetardo {
+  0% { opacity: 0; }       /* Empieza invisible */
+  50% { opacity: 0; }      /* Se mantiene invisible (este es el "retardo") */
+  100% { opacity: 1; }     /* Aparece suavemente al final */
+}
+
+.contacto_texto{
+ /* display: flex;   */
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  text-align: center;
+  color: black;
+  padding: 1rem;
+/*   position: absolute; */
+  font-size: 1.8rem;
+  margin: 3rem auto;
+  margin-bottom: 1rem;
+}
+
+/* A partir de aquí, se agregan estilos para el formulario de contacto en el pie de página. Se define un contenedor flexible para el formulario, con un ancho mínimo y máximo, y se aplican estilos a los elementos del formulario, como etiquetas, campos de entrada
+ y botones. Además, se agregan estilos para el texto de copyright al final del pie de página. */
+.contact_form {
+  flex: 1;
+  min-width: auto;  
+  padding: 20px;
+  background-color: #3f6172;
+  color: white;
+  font-size: 1.2rem;
+}
+/* 
+.contact-form {
+  margin-bottom: 15px;
+} */
+
+.form_group {
+  margin-bottom: 15px;
+}
+
+.form_group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+
+.form_group input,
+.form_group textarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #3f6172;
+  border-radius: 4px;
+  background-color: #dbdedf;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  }
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form_button {
+  background-color: #ffaa00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+.form_button:hover {
+  background-color: #acb0b2;
+}
+
+
+.footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 0;
+}
+.copyright{
+    padding: 1rem;
+}

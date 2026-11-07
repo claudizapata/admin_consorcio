@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: flex-end; /* Centra la imagen y el texto verticalmente entre sí */
  /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
-  background-color: #acb0b2;
+  background-color: #3f6172;
   /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
   color: black;
   font-weight:100;
@@ -86,7 +86,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #5a5f75e7;
+  background-color: #d58f16;
   color: white;
   border: none;
   border-radius: 50%;

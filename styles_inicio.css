@@ -1,5 +1,7 @@
-
-/* Main */
+.separa{
+  height: 10rem;
+  }
+/* Main *//* 
 .contenedor_main{
   background-image: url('./assets/city-streets1.jpg');
   background-size: cover;
@@ -10,18 +12,33 @@
   height: 80vh;
   margin: 0;  
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items:flex-end ;
 } 
+ */
+ /* Texto sobre la imagen de fondo */
+/* Contenedor principal */
+.contenedor_main {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Ajusta la altura que desees */
+  overflow: hidden;
+}
 
+/* Imagen que ocupa todo el contenedor */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Estado normal de la sección */
-.nosotros {
+.titulo_section {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 /* Cuando el usuario hace clic en el navbar y la sección se activa */
-.nosotros:target {
+.titulo_section:target {
   animation: conRetardo 1.2s forwards;
 }
 /* Animación que espera antes de mostrar el contenido */
@@ -31,16 +48,63 @@
   100% { opacity: 1; }     /* Aparece suavemente al final */
 }
 
-.nosotros_texto{
+.texto_section{
  /* display: flex;   */
   border-top: black 2px solid;
   border-bottom: black 2px solid;
-  text-align: center;
-  margin: 4rem;
+  text-align: left;
   color: black;
   padding: 3rem;
 /*   position: absolute; */
-  font-size: 1.8rem;
- 
+  font-size: 1.3rem;
+  margin: 3rem auto;  
 }
 
+
+/* Comunicacion */
+body {
+      margin: 0;
+      font-family: sans-serif;
+        }
+
+/* .comunicacion{
+  color: white;  
+} */
+   
+/* Cada sección ocupa toda la pantalla */
+    .seccion-scroll {
+      height: 20vh;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Estado inicial: oculto y ligeramente desplazado hacia abajo */
+    .texto-oculto {
+      font-size: 1.5rem;
+      padding: 2rem;      
+      text-align: center;
+      width: 70%;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease; /* Controla la suavidad */
+      }
+      .bordes{
+        /* Redondear las esquinas */
+        border-radius: 12px;
+
+        /* Efecto esfumado / Sombra */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        
+        /* Estilos opcionales de relleno y fondo para que se note el efecto */
+        background-color: #ffffff;
+        padding: 20px;
+      }
+
+    /* Clase que añadirá JavaScript cuando el elemento sea visible */
+    .texto-oculto.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }

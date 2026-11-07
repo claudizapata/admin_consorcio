@@ -37,7 +37,7 @@
 }
 
 .titulo-normativa{
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -58,17 +58,26 @@
   font-size: 1.2rem;
   
   
-  --bs-accordion-active-bg: #5a5f75e7; /* Fondo activo */
+  --bs-accordion-active-bg: #3f6172; /* Fondo activo */
   --bs-accordion-active-color: white; /* Texto activo */
   --bs-accordion-btn-focus-box-shadow: none; /* Quitar sombra celeste */
 }
 .accordion-button{
   background-color: #acb0b2;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
  }
 .accordion-body{
   background-color: #e5e5e7;
   color: black;
+}
+
+.footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 0;
+}
+.copyright{
+    padding: 1rem;
 }
 

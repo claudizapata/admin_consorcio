@@ -12,7 +12,7 @@ document.querySelectorAll('.link_nav').forEach(enlace => {
       if (targetSection) {
         targetSection.scrollIntoView({
           behavior: 'smooth', // Hace que el movimiento sea fluido
-          block: 'start'      // Alinea la sección al inicio de la pantalla
+          block: 'medium'      // 'start' Alinea la sección al inicio de la pantalla
         });
       }
     }, 700); // Cambia este número para dar más o menos retardo
