@@ -1,0 +1,40 @@
+
+.contenedor_transparencia {
+  display: flex;
+  flex-wrap: wrap; /* Alinea los elementos hijos en una columna */
+  align-items:stretch; /* Alinea los elementos hijos para que ocupen toda la altura del contenedor  */
+  gap: .3rem; /* Espacio entre columnas*/
+  height: auto; /* Ajusta según tus necesidades */  
+  margin: auto; /* Centra el contenedor horizontalmente */
+  max-width: 90%; /* Ajusta según tus necesidades */
+  padding-bottom: 2rem; /* Espacio interno */
+ }
+.seccion-scroll{
+  padding: 2rem;
+  width: 33%;
+  align-items: stretch; /* Alinea los elementos hijos para que ocupen toda la altura del contenedor  */
+}
+    /* Estado inicial: oculto y ligeramente desplazado hacia abajo */
+.texto-oculto {
+      /* font-size: 1.3rem;     
+      text-align: center;    */   
+      /* font-weight: bold; */
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease; /* Controla la suavidad */
+}
+.bordes{
+     /* Redondear las esquinas */
+    border-radius: 12px;
+    /* Efecto esfumado / Sombra */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);        
+    /* Estilos opcionales de relleno y fondo para que se note el efecto */
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+}
+
+/* Clase que añadirá JavaScript cuando el elemento sea visible */
+.texto-oculto.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

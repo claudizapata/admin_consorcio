@@ -1,0 +1,61 @@
+/* 1. Contenedor principal con perspectiva 3D */
+.contenedor_tarjetas{
+ display: flex; 
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  flex-wrap: wrap;         /* Permite que las tarjetas se ajusten en varias filas si es necesario */
+  gap: 20px;               /* Espacio entre las tarjetas */
+  padding: 20px;
+}
+.card {
+ display:inline-block;  
+  width: 40%;
+  height: 30vh;
+  perspective: 1000px; /* Da profundidad al giro */
+  margin: 20px;
+}
+
+/* 2. Contenedor interno que realizará la rotación */
+.card-inner {
+ position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s; /* Velocidad del giro */
+  transform-style: preserve-3d; /* Mantiene el espacio 3D para los hijos */
+}
+
+/* 3. Activar el giro al pasar el mouse sobre .card */
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* 4. Estilos compartidos para ambas caras */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara que queda mirando hacia atrás */
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 5. Estilo específico de la cara frontal */
+.card-front {
+  background-color: #2b5876;
+  color: white;
+}
+
+/* 6. Estilo de la cara trasera (previamente rotada 180 grados) */
+.card-back {
+  background-color: #f4f4f9;
+  font-size: 1.3rem;
+  color: #333;
+  transform: rotateY(180deg); /* Empieza dada vuelta */
+}
