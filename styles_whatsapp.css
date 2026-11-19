@@ -26,3 +26,34 @@
   width: 35px;
   height: 35px;
 }
+@media screen and (max-width: 768px){
+  .whatsapp-float {
+  position: fixed;
+  bottom: 150px;
+  right: .3rem;
+  z-index: 1000;
+}
+
+.whatsapp-float a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-float a:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-float svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+}

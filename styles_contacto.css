@@ -25,12 +25,11 @@
   display: flex;
   align-items: center;
   width: 100%;  
-  height: 100%;
-  object-fit: cover;
+  height: 100%;  
 }
 .contact_form {
   flex: 1;
-  max-width: 70%;
+  max-width: 60%;
   min-width: auto;  
   padding: 20px;
   background-color: #acb0b2;
@@ -49,11 +48,11 @@
   width: 80%;
   padding: 10px;
   border: 1px solid #3f6172;
-  border-radius: 4px;
+  border-radius: 20px;
   background-color: #dbdedf;
   color: #fff;
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1rem;
   }
 .form-group textarea {
   height: 100px;
@@ -65,10 +64,10 @@
   border: none;
   border: 1px solid #3f6172;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   width: 80%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .form_button:hover {
   background-color: #3f6172;
@@ -77,26 +76,28 @@
 /* DATOS DE CONTACTO */
 .contacto_ambos {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
 }
 .contacto_ {
   display: flex;
   flex-direction: column;
   justify-content: left;  
-  font-size: 1.2rem;
   width: auto;
-  margin-top: 1rem;
+  margin-top: 1rem;   
+}
+.contacto_ p {
+  font-size: 1.2rem;
+  margin: 0;
 }
 .contacto_e_t{
   display: flex;
-  align-items: center; 
-  font-size: 1.5rem;
+  align-items: center;  
   width: auto;
-  margin: 0;
+  margin: 0;  
 }
 .icono_contacto{
-  width: 30px;
-  height: 30px;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-right: .5rem;
 }
 
@@ -105,6 +106,112 @@
     text-align: center;
     padding: 2rem 0;
 }
-.copyright{
+.copyright p{
     padding: 1rem;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #contacto {
+    margin-top: 1rem;
+}
+
+/* FORMULARIO */
+/* A partir de aquí, se agregan estilos para el formulario de contacto en el pie de página. Se define un contenedor flexible para el formulario, con un ancho mínimo y máximo, y se aplican estilos a los elementos del formulario, como etiquetas, campos de entrada
+ y botones. Además, se agregan estilos para el texto de copyright al final del pie de página. */
+ .contenedor_form {
+  background-color:  #dfe0e1;
+  padding: 0rem 0rem;
+  display: flex;
+  flex-direction: column;  
+  width: 100% 0;  
+  height: auto;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: 1px solid #3f6172;
+  border-radius: 20px;
+}
+.contact_form {
+  flex: 1;
+  max-width: 100%;
+  min-width: auto;  
+  padding: 0px;
+  background-color: #dfe0e1;
+  font-size: .8rem;
+}
+.form_group {
+  margin-bottom: .2rem;
+}
+.form_group label {
+  display: contents;
+  margin-bottom: .2rem;
+  font-size: .8rem;
+}
+.form_group input,
+.form_group textarea {
+  width: 100%;
+  padding: .2rem;
+  border: 1px solid #3f6172;
+  border-radius: 20px;
+  background-color: white;
+  color: #fff;
+  box-sizing:border-box;
+  font-size: .8rem;
+  }
+.form-group textarea {
+  height: 1rem;
+  resize: vertical;
+}
+.form_button {
+  background-color: #ffaa00;
+  color: black;
+  border: none;
+  border: 1px solid #3f6172;
+  padding: .5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: .8rem;
+}
+.form_button:hover {
+  background-color: #3f6172;
+}
+
+/* DATOS DE CONTACTO */
+.contacto_ambos{
+   padding: .8rem;
+
+}
+.contacto_ambos .contacto_{
+  justify-content: center;
+  text-align: center;
+ 
+  
+}
+.contacto_ {
+  justify-content: center;
+   margin-top: .2rem;   
+}
+.contacto_ p {
+  font-size: .8rem;
+  margin: 0;
+}
+.icono_contacto{
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: .5rem;
+}
+
+.footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: .5rem 0;
+    
+}
+.footer p{
+    padding: 0;
+    font-size: .6rem;
+}
+
 }

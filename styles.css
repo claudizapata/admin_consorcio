@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 1rem; /* El texto normal mide 16px */
+  font-size: 16px; /* El texto normal mide 16px */
 }
 .contenedor_h1 {
   font-size: 1rem; /* El título mide 40px (16 * 2.5) */
@@ -25,7 +25,9 @@ body {
   font-family: "Lato", sans-serif;
 /*   font-weight: 300; 
 */
-
+.header-tit{
+  color: orange;
+}
 .inter-cuerpo {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -63,7 +65,7 @@ body {
   color: white;
   font-size: 1.6rem;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration:solid;
   font-style: normal;
 }
 
@@ -108,16 +110,109 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /* 2. Media Query para Celulares */
-@media (max-width: 768px) {
-  html {
-    font-size: 14px; /* ¡Magia! Ahora 1rem pasa a valer 14px */
-  }
+@media screen and (max-width: 768px) {
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.contenedor_header{
+  display: flex;
+  flex-direction: column; /* Activa el diseño en línea (horizontal) */
+  justify-content: space-around;
+  align-items:center; /* Centra la imagen y el texto verticalmente entre sí */
+ /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
+  background-color: #3f6172;
+  /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
+  color: black;
+  font-weight:100;
+  font-style: italic;
+  padding: .5rem;
+  font-size: .8rem;
+}
+
+.contenedor_h1 {
+  font-size: .8rem; /* El título mide 40px (16 * 2.5) */
+  font-family: "Lato", sans-serif;
+}
+
+.tit_logo{
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  max-height: 2.5rem;      /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: auto;
+  border-radius: 60% 40% 50% 70%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin-right: .3rem;
+}
+.header-texto{
+  font-size: .8rem;
+}
+.header-tit{
+  font-size: 1rem;
+  color: orange;
+}
+.contenedor_nav{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;  
+}
+.link_nav{
+  color: orange;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Color cuando la opción está activa */
+.link_nav.active {
+  color: #efc41a; /* (cambia este color a tu gusto) */
+  font-weight: bold;
+}
+.link_nav:hover{
+  color: rgb(20, 214, 204);
+  text-decoration: solid;
+   color: #efc41a;
+}
+
+.contenedor_main {
+  padding: .1rem; /* El espacio interno mide 32px (16 * 2) */
+}
+
+/* Botón Volver Arriba */
+.btn-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: .3rem;
+  background-color: #d58f16;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: bolder;  
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-flotante.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 }
