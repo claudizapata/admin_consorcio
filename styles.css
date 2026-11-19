@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
   align-items: flex-end; /* Centra la imagen y el texto verticalmente entre sí */
  /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
-  background-color: #3f6172;
+  background-color: rgb(63, 97, 114);
   /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
   color: black;
   font-weight:100;
@@ -150,12 +150,13 @@ body {
   object-fit: cover;
   margin-right: .3rem;
 }
-.header-texto{
-  font-size: .8rem;
-}
+
 .header-tit{
   font-size: 1rem;
   color: orange;
+}
+.header-texto{
+  font-size: .9rem;
 }
 .contenedor_nav{
   display: flex;
@@ -189,7 +190,7 @@ body {
 .btn-flotante {
   position: fixed;
   bottom: 20px;
-  right: .3rem;
+  right: .4rem;
   background-color: #d58f16;
   color: white;
   border: none;

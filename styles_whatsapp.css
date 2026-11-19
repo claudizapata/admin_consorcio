@@ -30,7 +30,7 @@
   .whatsapp-float {
   position: fixed;
   bottom: 150px;
-  right: .3rem;
+  right: .4rem;
   z-index: 1000;
 }
 
