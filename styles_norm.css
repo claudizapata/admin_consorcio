@@ -10,15 +10,34 @@
 }
 
 /* Imagen que ocupa todo el contenedor */
-.hero-image {
+/* .hero-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+.hero-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Inicia recortada en el centro (0% visible) y termina al 100% */
+  animation: abrirDesdeCentro 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
+@keyframes abrirDesdeCentro {
+  0% {
+    clip-path: inset(50% 50% 50% 50%); /* Totalmente cerrada en el centro */
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%); /* Totalmente abierta */
+  }
+}
+
 .hero-imageApp{
   display: none;
 }
+/* Hasta acá imagen de la portada */
 
 /* Contenedor del texto centrado encima de la imagen */
 .animated-text-normativa {
@@ -97,8 +116,20 @@
    width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Inicia recortada en el centro (0% visible) y termina al 100% */
+  animation: abrirDesdeCentro 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-  
+
+@keyframes abrirDesdeCentro {
+  0% {
+    clip-path: inset(50% 50% 50% 50%); /* Totalmente cerrada en el centro */
+  }
+  100% {
+    clip-path: inset(0% 0% 0% 0%); /* Totalmente abierta */
+  }
+
+}
+/* Hasta acá la imagen de portada */
 .titulo-normativa{
   font-size: 1.5rem;
   font-weight: bold;
