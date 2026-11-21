@@ -13,9 +13,9 @@ body {
   position: relative;
   display: flex;    /* Activa el diseño en línea (horizontal) */
   flex-direction: column;
-  align-items: flex-end; /* Centra la imagen y el texto verticalmente entre sí */
+  /* align-items: flex-end; / * Centra la imagen y el texto verticalmente entre sí */
  /*  gap: 15px;       */       /* Controla el espacio de separación entre la imagen y el texto */
-  background-color: rgb(63, 97, 114);
+  background-color: rgb(124, 162, 181);
   /* background: linear-gradient(#5c7e89,transparent 80%, 20% ); */
   color: black;
   font-weight:100;
@@ -30,14 +30,17 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 3rem;
-  justify-content:space-evenly;
+  justify-content:space-between;
+}
+.logo_marca{
+  display: flex;
 }
 .header-logo {
   max-height: 100px;      /* Ajusta el tamaño de la imagen según tus necesidades */
   width: auto;
   border-radius: 60% 40% 50% 70%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+ /*  object-fit: cover; */
   margin-right: 1rem;
 }
 .header-tit{
@@ -46,8 +49,11 @@ body {
 .h1_abajo{
   font-size: 1.3rem;
 }
-.contenedor_main {
-  padding: .1rem; /* El espacio interno mide 32px (16 * 2) */
+.contacto_ambos_header{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bolder;
 }
 /* --------------------- */
 
@@ -56,11 +62,6 @@ body {
   font-family: "Lato", sans-serif;
 /*   font-weight: 300; 
 */
-
-.contacto_ambos_header{
-  display: flex;
-  flex-direction: column; 
-}
 .nav_horizontal{
   display: block;
 }
@@ -69,7 +70,7 @@ body {
 }
 .contenedor_nav{
   display: flex;
-  justify-content: space-around;
+  justify-content:right;
   gap: 15px;  
 }
 .link_nav{
@@ -88,7 +89,12 @@ body {
 .link_nav:hover{
   color: rgb(20, 214, 204);
   text-decoration: solid;
-   color: #efc41a;
+   color: orange;
+   text-decoration: underline;
+}
+
+.contenedor_main {
+  padding: .1rem; /* El espacio interno mide 32px (16 * 2) */
 }
 
 /* Botón Volver Arriba */

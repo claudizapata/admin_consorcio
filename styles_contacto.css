@@ -76,7 +76,8 @@
 /* DATOS DE CONTACTO */
 .contacto_ambos {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  font-weight: bolder;
 }
 .contacto_ {
   display: flex;

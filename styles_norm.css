@@ -93,8 +93,6 @@
   color: black;
 }
 /* Hasta acá, el acordeon */
-
-
 .footer{
     background-color: #f8f9fa;
     text-align: center;
@@ -104,9 +102,9 @@
     padding: 1rem;
 }
 
-@media screen and (max-width: 768px){
 
-  
+
+@media screen and (max-width: 768px){  
 /* Imagen que ocupa todo el contenedor */
 .hero-image {
   display: none;
